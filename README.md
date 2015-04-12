@@ -1,4 +1,3 @@
-# vagrant-boxes
 # Vagrant Base Boxes
 
 ## Downloads
