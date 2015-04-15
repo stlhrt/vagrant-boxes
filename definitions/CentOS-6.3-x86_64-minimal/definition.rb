@@ -1,4 +1,10 @@
-Veewee::Session.declare({
+Veewee::Definition.declare({
+	:hooks => {
+		:before_postinstall => Proc.new { 
+			definition.box.copy('oracle/oracle-xe-11.2.0-1.0.x86_64.rpm.zip', '/tmp/oracle/oracle-xe-11.2.0-1.0.x86_64.rpm.zip')
+			definition.box.copy('oracle/xe.rsp', '/tmp/oracle/xe.rsp')
+		}
+	},
   :cpu_count => '1',
   :memory_size=> '1024',
   :disk_size => '24280',
@@ -29,6 +35,7 @@ Veewee::Session.declare({
     "base2.sh",
     "vagrant.sh",
     "virtualbox.sh",
+    "oracle.sh",
     "cleanup.sh",
     "zerodisk.sh"
   ],
