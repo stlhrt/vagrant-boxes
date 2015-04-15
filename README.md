@@ -6,6 +6,8 @@
 
 These box definitions are for automatic building using [veewee](https://github.com/jedi4ever/veewee) .
 
+Built and released as [Vagrant](https://www.vagrantup.com/) box on [Atlas](https://atlas.hashicorp.com/woznial/boxes/centos-6.3-oracle-xe)
+
 The definitions are roughly based on https://github.com/ismaild/vagrant-boxes , which in turn are based on stock veewee definitions for a minimal CentOS installation, with the following changes:
 * Additional reboot to use installed current kernel and allow successful VBoxAddons build
 * Additional apps: htop, nano
