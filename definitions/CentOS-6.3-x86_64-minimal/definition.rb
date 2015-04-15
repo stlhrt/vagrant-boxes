@@ -1,8 +1,9 @@
 Veewee::Definition.declare({
 	:hooks => {
 		:before_postinstall => Proc.new { 
-			definition.box.copy('oracle/oracle-xe-11.2.0-1.0.x86_64.rpm.zip', '/tmp/oracle/oracle-xe-11.2.0-1.0.x86_64.rpm.zip')
-			definition.box.copy('oracle/xe.rsp', '/tmp/oracle/xe.rsp')
+			definition.box.exec('mkdir /tmp/oracle')
+			definition.box.scp('oracle/oracle-xe-11.2.0-1.0.x86_64.rpm.zip', '/tmp/oracle/oracle-xe-11.2.0-1.0.x86_64.rpm.zip')
+			definition.box.scp('oracle/xe.rsp', '/tmp/oracle/xe.rsp')
 		}
 	},
   :cpu_count => '1',
