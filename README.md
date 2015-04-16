@@ -13,7 +13,7 @@ The definitions are roughly based on https://github.com/ismaild/vagrant-boxes , 
 * Additional apps: htop, nano
 * Added packages required by Oracle XE install
 * More memmory by default (1G)
-* modified so the disk can grow to 200GB and provide 2.5GB of swap.
+* Swap as required by Oracle 2048MB
 * Removed chef & puppet
 
 ```sh
