@@ -23,5 +23,5 @@ The definitions are roughly based on https://github.com/ismaild/vagrant-boxes , 
 $ veewee vbox build CentOS-6.3-x86_64-minimal
 # Halt the VM before vagrant boxing to prevent generated ssh key replacing default vagrant key
 $ veewee vbox halt CentOS-6.3-x86_64-minimal
-$ vagrant package --base CentOS-6.3-x86_64 --output CentOS-6.3-x86_64-.box
+$ vagrant package --base CentOS-6.3-x86_64-minimal --output CentOS-6.3-x86_64-.box
 ```
